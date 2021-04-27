@@ -294,23 +294,31 @@ ul.row{
     padding: 10rem 40rem 2rem 0;
 }
 
-.card-work .card-outer{
+.card-work .card-outer {
     position: relative;
     overflow: hidden;
 }
 
-.card-work .card-image{
+.card-work .card-image img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
 }
 
-.card-work:hover .card-inner{
+.card-work .card-inner {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    z-index: 1;
+}
+
+.card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.card-work .card-title{
+.card-work .card-title {
     text-align: center;
     margin: 0;
     opacity: 0;
@@ -318,10 +326,10 @@ ul.row{
     position: relative;
 }
 
-.card-work .card-title a{
+.card-work .card-title a {
     display: block;
     text-decoration: none;
-    padding: 45%;
+    padding-top: 45%;
 }
 
 .card-work .card-title a::after {
@@ -335,6 +343,40 @@ ul.row{
 
 .card-work:hover .card-title {
     opacity: 1;
+}
+
+.card-testimonial .card-quote{
+    position: relative;
+}
+
+.card-testimonial .card-quote::before {
+    content: "\201C";
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
+}
+
+.card-work:hover .card-image {
+    transform: scale(1.2);
+}
+
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+}
+
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .container{
