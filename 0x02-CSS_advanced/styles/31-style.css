@@ -359,6 +359,33 @@ ul.row{
     z-index: -1;
 }
 
+.card-work:hover .card-image {
+    transform: scale(1.2);
+}
+
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+}
+
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Task 20 */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .container{
     width: 960px;
     margin-left: auto;
