@@ -1,8 +1,9 @@
 /* body margin */
 $zero :  0px;
+$padd : 0px;
 
 body {
     margin: $zero;
-    padding: $zero; }
+    padding: $padd; }
     body p {
       margin: $zero; }
