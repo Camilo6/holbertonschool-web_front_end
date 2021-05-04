@@ -1,0 +1,9 @@
+/* hover */
+$text : #FF0000;
+$hover: #00FF00;
+
+button {
+    color: #FF0000; 
+    &:hover {
+      color: $hover; }
+}
