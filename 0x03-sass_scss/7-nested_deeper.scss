@@ -8,7 +8,7 @@ body {
     font-size: $fsiz;
     h1{
       font-size: $fs2; 
-        .smaller {
+        &.smaller {
         font-size: $fs3; }
     }
 }
