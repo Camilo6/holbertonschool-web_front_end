@@ -2,10 +2,20 @@
 $ten : 10px;
 $fvt: 15px;
 
-body {
+@mixin marginbody {
     margin-left: $ten;
-    margin-right: $ten; }
-  div {
+    margin-right: $ten; 
+}
+
+@mixin margindiv {
     margin-left: $fvt;
-    margin-right: $fvt; }
+    margin-right: $fvt; 
+}
+
+body {
+    @include marginbody;
+    }
+    div {
+    @include margindiv;
+    }
 
