@@ -1,0 +1,6 @@
+/* Use for statement to create classes 1 to 4 */
+@for $i from 1 to 6 {
+    col-#{$i} {
+        width: 100%/$i;
+    }
+}
