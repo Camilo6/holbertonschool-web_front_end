@@ -1,0 +1,11 @@
+/* mixin margins */
+$ten : 10px;
+$fvt: 15px;
+
+body {
+    margin-left: $ten;
+    margin-right: $ten; }
+  div {
+    margin-left: $fvt;
+    margin-right: $fvt; }
+
