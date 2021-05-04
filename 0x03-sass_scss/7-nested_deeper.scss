@@ -1,0 +1,14 @@
+/* nested again */
+$fsiz: 14px;
+$fs2: 16px;
+$fs3: 12px;
+
+
+body {
+    font-size: $fsiz;
+    h1{
+      font-size: $fs2; 
+        .smaller {
+        font-size: $fs3; }
+    }
+}
