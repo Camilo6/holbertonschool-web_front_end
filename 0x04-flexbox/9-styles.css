@@ -509,6 +509,6 @@
 
   /* Section ABOUT US */
 
-  .[att*=col-]{
+  .[class*=col-]{
     align-self: center;
   }
